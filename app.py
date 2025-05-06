@@ -23,9 +23,6 @@ class FileManagerApp:
         self.page.theme_mode = ft.ThemeMode.DARK
         self.page.bgcolor = colors.BLACK
         self.page.padding = 0
-        self.page.window.width = 1200
-        self.page.window.height = 700
-        self.page.window.center()
         self.page.update()
         
         # Iniciar con la página de login
@@ -167,4 +164,4 @@ def main(page: Page):
     app.initialize_app(page)
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(target=main, view=ft.WEB_BROWSER)
